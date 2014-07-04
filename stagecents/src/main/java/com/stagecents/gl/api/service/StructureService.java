@@ -1,0 +1,43 @@
+/**
+ * Copyright (c) 2009-2014 Kaaterskil Management, LLC
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+package com.stagecents.gl.api.service;
+
+import com.stagecents.gl.api.command.CreateStructureCommand;
+import com.stagecents.gl.api.command.DeleteSegmentValueCommand;
+
+public interface StructureService {
+
+    /**
+     * Creates a chart of accounts segment.
+     * 
+     * @param command CreateSegmentCommand object with all the data necessary to
+     *            create a chart of accounts segment.
+     */
+    void createStructure(CreateStructureCommand command);
+
+    /**
+     * Deletes a segment value.
+     * 
+     * @param command The DeleteSegmentValueCommand object.
+     */
+    void deleteSegmentValue(DeleteSegmentValueCommand command);
+}
